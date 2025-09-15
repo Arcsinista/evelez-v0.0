@@ -1,26 +1,27 @@
-<script lang="ts" setup>
-    const { data: tasks, error, status, pending, refresh } = await useFetch("/api/tasks", { lazy: true });
-</script>
-
 <template>
-    <h1>Hello world</h1>
-
-    <article v-if="status === 'pending'" aria-busy="true" />
-    
-    <article class="error" v-else-if="error">
-        {{ error.statusMessage }}
-    </article>
-
-    <div v-else>
-        <article v-for="task in tasks" :key="task.id">
-        {{ task.title }}
-        </article>
-    </div>
+  <div class="min-h-screen bg-white">
+    <NavBar />
+    <HeroSection />
+    <BrandsSection />
+    <SectorsSection />
+    <CatalogSection />
+    <AboutSection />
+    <ContactSection />
+    <FooterSection />
+  </div>
 </template>
 
+<script setup>
+// Meta tags for SEO
+useHead({
+  title: 'Coinsa Uniformes - Uniformes para Empresas',
+  meta: [
+    { name: 'description', content: 'Fabricante y distribuidor de uniformes industriales y corporativos de alta calidad en México. Especialistas en uniformes para hoteles, manufactura, oficinas, seguridad y transporte.' },
+    { name: 'keywords', content: 'uniformes empresariales, uniformes industriales, uniformes corporativos, uniformes para hoteles, uniformes manufactura' }
+  ]
+})
+</script>
 
-<style>
-    .error {
-        color: red;
-    }
+<style scoped>
+/* Additional page-specific styles can go here */
 </style>

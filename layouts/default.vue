@@ -1,7 +1,7 @@
 <template>
+    <!-- <Default.vue /> -->
     <div>
-        <AppNavBar />
-        <main class="container">
+        <main>
             <slot />
         </main>
     </div>

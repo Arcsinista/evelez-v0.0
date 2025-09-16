@@ -3,18 +3,16 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@picocss/pico": "^2.1.1",
-    "nuxt": "^3.19.2",
-    "vue": "^3.5.21",
-    "vue-router": "^4.5.1"
+    "nuxt": "^3.19.2"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0"

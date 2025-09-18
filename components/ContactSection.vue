@@ -9,7 +9,7 @@
           Déjanos tus datos y uno de nuestros asesores te contactará pronto para ayudarte a cotizar tu pedido.
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <!-- Contact Form -->
         <div class="bg-white rounded-xl p-8 shadow-2xl">
@@ -42,7 +42,7 @@
                 />
               </div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
@@ -70,7 +70,7 @@
                 />
               </div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label for="state" class="block text-sm font-medium text-gray-700 mb-2">
@@ -103,7 +103,7 @@
                 </select>
               </div>
             </div>
-            
+
             <div class="mb-6">
               <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
                 Mensaje adicional
@@ -116,7 +116,7 @@
                 placeholder="Cuéntanos más sobre tus necesidades..."
               ></textarea>
             </div>
-            
+
             <button
               type="submit"
               :disabled="isSubmitting"
@@ -126,7 +126,7 @@
               <span v-else>Enviando...</span>
             </button>
           </form>
-          
+
           <!-- Success/Error Messages -->
           <div v-if="submitStatus === 'success'" class="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
             ¡Solicitud procesada! Se ha descargado un archivo con tu información y se abrió tu cliente de correo. Te contactaremos pronto a través de arcsinista@gmail.com.
@@ -135,7 +135,7 @@
             Error al enviar el mensaje. Por favor intenta de nuevo.
           </div>
         </div>
-        
+
         <!-- Contact Info -->
         <div class="text-white">
           <div class="mb-8">
@@ -164,7 +164,7 @@
               </div>
             </div>
           </div>
-          
+
           <div>
             <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
             <div class="space-y-3">
@@ -231,14 +231,14 @@ const mexicanStates = [
 ]
 
 // EmailJS configuration (you'll need to configure this)
-// const EMAILJS_SERVICE_ID = 'service_coinsa'
-// const EMAILJS_TEMPLATE_ID = 'template_coinsa'
+// const EMAILJS_SERVICE_ID = ''
+// const EMAILJS_TEMPLATE_ID = ''
 // const EMAILJS_USER_ID = 'your_public_key'
 
 const submitForm = async () => {
   isSubmitting.value = true
   submitStatus.value = ''
-  
+
   try {
     const emailContent = `
 Nueva solicitud de cotización desde Uniformes Corporativos Vélez:
@@ -257,10 +257,10 @@ ${form.message || 'Sin mensaje adicional'}
 Enviado desde: ${window.location.href}
 Fecha: ${new Date().toLocaleString('es-MX')}
     `.trim()
-    
+
     // Create mailto link for backup
     const mailtoLink = `mailto:arcsinista@gmail.com?subject=Solicitud de Cotización - ${form.name}&body=${encodeURIComponent(emailContent)}`
-    
+
     // Try to send via EmailJS if configured, otherwise use mailto
     if (typeof emailjs !== 'undefined') {
       const templateParams = {
@@ -274,11 +274,11 @@ Fecha: ${new Date().toLocaleString('es-MX')}
         message: form.message || 'Sin mensaje adicional',
         full_message: emailContent
       }
-      
+
       // This would work if EmailJS is properly configured
       await emailjs.send(emailjsServiceId, emailjsTemplateId, templateParams, emailjsUserId)
     }
-    
+
     // For now, we'll simulate the email and provide a download option
     const blob = new Blob([emailContent], { type: 'text/plain' })
     const url = window.URL.createObjectURL(blob)
@@ -289,23 +289,20 @@ Fecha: ${new Date().toLocaleString('es-MX')}
     a.click()
     window.URL.revokeObjectURL(url)
     document.body.removeChild(a)
-    
-    // Also open mailto as backup
-    window.open(mailtoLink, '_blank')
-    
+
     submitStatus.value = 'success'
-    
+
     // Reset form
     Object.keys(form).forEach(key => {
       form[key] = ''
     })
-    
+
   } catch (error) {
     console.error('Error al enviar el formulario:', error)
     submitStatus.value = 'error'
   } finally {
     isSubmitting.value = false
-    
+
     // Clear status after 8 seconds
     setTimeout(() => {
       submitStatus.value = ''

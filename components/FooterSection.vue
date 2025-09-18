@@ -5,7 +5,7 @@
         <!-- Company Info -->
         <div class="col-span-1 md:col-span-2">
           <div class="text-2xl font-bold text-blue-400 mb-4">
-            Coinsa Uniformes
+            Uniformes Corporativos Vélez
           </div>
           <p class="text-gray-300 mb-6 max-w-md">
             Más de 20 años vistiendo a las empresas de México con uniformes de la más alta calidad. 
@@ -82,26 +82,14 @@
           <div class="space-y-3">
             <div class="flex items-center">
               <span class="text-blue-400 mr-3">📧</span>
-              <a href="mailto:contacto@coinsauniformes.com" class="text-gray-300 hover:text-white transition duration-200">
-                contacto@coinsauniformes.com
+              <a class="text-gray-300 hover:text-white transition duration-200">
+                uniformesvelez@hotmail.com
               </a>
             </div>
             <div class="flex items-center">
               <span class="text-blue-400 mr-3">📱</span>
-              <a href="tel:+526144234275" class="text-gray-300 hover:text-white transition duration-200">
-                Chihuahua: (614) 423-4275
-              </a>
-            </div>
-            <div class="flex items-center">
-              <span class="text-blue-400 mr-3">📱</span>
-              <a href="tel:+526563973890" class="text-gray-300 hover:text-white transition duration-200">
-                Cd. Juárez: (656) 397-3890
-              </a>
-            </div>
-            <div class="flex items-center">
-              <span class="text-blue-400 mr-3">📱</span>
-              <a href="tel:+528183407031" class="text-gray-300 hover:text-white transition duration-200">
-                Monterrey: (81) 8340 7031
+              <a href="wa.me/5218130578792" class="text-gray-300 hover:text-white transition duration-200">
+                Monterrey: (81) 3057 8792
               </a>
             </div>
             <div class="flex items-center">
@@ -133,7 +121,7 @@
       <!-- Bottom Bar -->
       <div class="border-t border-gray-800 mt-8 pt-8 text-center">
         <p class="text-gray-400">
-          © 2025 Coinsa Uniformes. Todos los derechos reservados. 
+          © 2025 Uniformes Corporativos Vélez. Todos los derechos reservados. 
           Más de 20 años vistiendo a las empresas de México.
         </p>
       </div>
@@ -142,5 +130,5 @@
 </template>
 
 <script setup>
-// Footer component logic can go here if needed
+// Footer component logic
 </script>

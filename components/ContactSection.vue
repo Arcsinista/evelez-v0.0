@@ -142,21 +142,21 @@
             <h3 class="text-2xl font-bold mb-6">¿Por qué elegirnos?</h3>
             <div class="space-y-4">
               <div class="flex items-start">
-                <div class="text-yellow-400 text-xl mr-4">⚡</div>
+                <div class="text-gray-400 text-xl mr-4">⚡</div>
                 <div>
                   <h4 class="font-semibold mb-1">Respuesta Rápida</h4>
                   <p class="text-blue-200">Te contactaremos en menos de 24 horas hábiles</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <div class="text-yellow-400 text-xl mr-4">👨‍💼</div>
+                <div class="text-gray-400 text-xl mr-4">👨‍💼</div>
                 <div>
                   <h4 class="font-semibold mb-1">Asesoría Personalizada</h4>
                   <p class="text-blue-200">Un experto te ayudará a encontrar la mejor opción</p>
                 </div>
               </div>
               <div class="flex items-start">
-                <div class="text-yellow-400 text-xl mr-4">💯</div>
+                <div class="text-gray-400 text-xl mr-4">💯</div>
                 <div>
                   <h4 class="font-semibold mb-1">Sin Compromiso</h4>
                   <p class="text-blue-200">La cotización es totalmente gratuita</p>
@@ -169,23 +169,23 @@
             <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
             <div class="space-y-3">
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-3">📧</span>
+                <span class="text-gray-400 mr-3">📧</span>
                 <span>contacto@coinsauniformes.com</span>
               </div>
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-3">📱</span>
+                <span class="text-gray-400 mr-3">📱</span>
                 <span>Chihuahua: (614) 423-4275</span>
               </div>
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-3">📱</span>
+                <span class="text-gray-400 mr-3">📱</span>
                 <span>Cd. Juárez: (656) 397-3890</span>
               </div>
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-3">📱</span>
+                <span class="text-gray-400 mr-3">📱</span>
                 <span>Monterrey: (81) 8340 7031</span>
               </div>
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-3">🕒</span>
+                <span class="text-gray-400 mr-3">🕒</span>
                 <span>Horario: L-V 9:00 a 18:00 hrs</span>
               </div>
             </div>
@@ -241,7 +241,7 @@ const submitForm = async () => {
   
   try {
     const emailContent = `
-Nueva solicitud de cotización desde Coinsa Uniformes:
+Nueva solicitud de cotización desde Uniformes Corporativos Vélez:
 
 Nombre: ${form.name}
 Email: ${form.email}

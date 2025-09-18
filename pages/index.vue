@@ -14,7 +14,7 @@
 <script setup>
 // Meta tags for SEO
 useHead({
-  title: 'Coinsa Uniformes - Uniformes para Empresas',
+  title: 'Uniformes Corporativos Vélez',
   meta: [
     { name: 'description', content: 'Fabricante y distribuidor de uniformes industriales y corporativos de alta calidad en México. Especialistas en uniformes para hoteles, manufactura, oficinas, seguridad y transporte.' },
     { name: 'keywords', content: 'uniformes empresariales, uniformes industriales, uniformes corporativos, uniformes para hoteles, uniformes manufactura' }

@@ -8,7 +8,7 @@
 
 <style>
 html, body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   components: true,
   app: {
     head: {
-      title: 'Coinsa Uniformes - Uniformes para Empresas',
+      title: 'Uniformes Corporativos Vélez',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

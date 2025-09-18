@@ -5,23 +5,23 @@
         <!-- Logo -->
         <div class="flex items-center">
           <div class="text-2xl font-bold text-blue-600">
-            Coinsa Uniformes
+            <img :src="logo" alt="Logo" class="max-h-12"/>
           </div>
         </div>
         
         <!-- Desktop Navigation -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
-            <a href="#inicio" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition duration-200">
+            <a href="#inicio" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-lg font-medium transition duration-200">
               Inicio
             </a>
-            <a href="#sectores" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition duration-200">
+            <a href="#sectores" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-lg font-medium transition duration-200">
               Sectores
             </a>
-            <a href="#catalogo" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition duration-200">
+            <a href="#catalogo" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-lg font-medium transition duration-200">
               Catálogo
             </a>
-            <a href="#contacto" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-200">
+            <a href="#contacto" class="bg-gray-800 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-gray-900 transition duration-200">
               Contacto
             </a>
           </div>
@@ -61,6 +61,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import logo from '~/assets/logo.jpg'
 
 const isOpen = ref(false)
 </script>

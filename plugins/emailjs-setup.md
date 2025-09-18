@@ -21,7 +21,7 @@
   Para: arcsinista@gmail.com
   
   Cuerpo:
-  Nueva solicitud de cotización desde Coinsa Uniformes:
+  Nueva solicitud de cotización desde Uniformes Corporativos Vélez:
   
   Nombre: {{from_name}}
   Email: {{from_email}}

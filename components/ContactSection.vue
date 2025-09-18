@@ -129,7 +129,7 @@
 
           <!-- Success/Error Messages -->
           <div v-if="submitStatus === 'success'" class="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-            ¡Solicitud procesada! Se ha descargado un archivo con tu información y se abrió tu cliente de correo. Te contactaremos pronto a través de uniformesvelez@hotmail.com.
+            ¡Solicitud procesada! Te contactaremos pronto a través de uniformesvelez@hotmail.com.
           </div>
           <div v-if="submitStatus === 'error'" class="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
             Error al enviar el mensaje. Por favor intenta de nuevo.
@@ -277,15 +277,15 @@ Fecha: ${new Date().toLocaleString('es-MX')}
     }
 
     // For now, we'll simulate the email and provide a download option
-    const blob = new Blob([emailContent], { type: 'text/plain' })
-    const url = window.URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `Cotización-${form.name}-${new Date().toISOString().split('T')[0]}.txt`
-    document.body.appendChild(a)
-    a.click()
-    window.URL.revokeObjectURL(url)
-    document.body.removeChild(a)
+    // const blob = new Blob([emailContent], { type: 'text/plain' })
+    // const url = window.URL.createObjectURL(blob)
+    // const a = document.createElement('a')
+    // a.href = url
+    // a.download = `Cotización-${form.name}-${new Date().toISOString().split('T')[0]}.txt`
+    // document.body.appendChild(a)
+    // a.click()
+    // window.URL.revokeObjectURL(url)
+    // document.body.removeChild(a)
 
     submitStatus.value = 'success'
 

@@ -170,15 +170,7 @@
             <div class="space-y-3">
               <div class="flex items-center">
                 <span class="text-gray-400 mr-3">📧</span>
-                <span>contacto@coinsauniformes.com</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-gray-400 mr-3">📱</span>
-                <span>Chihuahua: (614) 423-4275</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-gray-400 mr-3">📱</span>
-                <span>Cd. Juárez: (656) 397-3890</span>
+                <span>uniformesvelez@hotmail.com</span>
               </div>
               <div class="flex items-center">
                 <span class="text-gray-400 mr-3">📱</span>

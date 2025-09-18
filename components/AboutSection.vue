@@ -9,7 +9,7 @@
             <span class="text-blue-600">empresa merece</span>
           </h2>
           <p class="text-lg text-gray-600 mb-8">
-            En Coinsa sabemos lo importante que es que cada persona se sienta cómoda y segura con lo que usa día a día.
+            En Uniformes Corporativos Vélez sabemos lo importante que es que cada persona se sienta cómoda y segura con lo que usa día a día.
           </p>
           <p class="text-lg text-gray-600 mb-8">
             Por eso, trabajamos con las mejores marcas nacionales e internacionales, cuidando cada parte del proceso: 

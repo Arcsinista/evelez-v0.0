@@ -18,7 +18,7 @@
   ```
   Asunto: Nueva solicitud de cotización - {{from_name}}
   
-  Para: arcsinista@gmail.com
+  Para: uniformesvelez@hotmail.com
   
   Cuerpo:
   Nueva solicitud de cotización desde Uniformes Corporativos Vélez:
@@ -53,7 +53,7 @@ const EMAILJS_USER_ID = 'tu_public_key_aqui'
 
 ### 6. Prueba
 - Llenar el formulario
-- Verificar que llegue el email a arcsinista@gmail.com
+- Verificar que llegue el email a uniformesvelez@hotmail.com
 
 ## Método alternativo (actual)
 El formulario actual crea un archivo .txt con la información y abre mailto: como respaldo.

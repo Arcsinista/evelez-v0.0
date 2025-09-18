@@ -129,7 +129,7 @@
 
           <!-- Success/Error Messages -->
           <div v-if="submitStatus === 'success'" class="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-            ¡Solicitud procesada! Se ha descargado un archivo con tu información y se abrió tu cliente de correo. Te contactaremos pronto a través de arcsinista@gmail.com.
+            ¡Solicitud procesada! Se ha descargado un archivo con tu información y se abrió tu cliente de correo. Te contactaremos pronto a través de uniformesvelez@hotmail.com.
           </div>
           <div v-if="submitStatus === 'error'" class="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
             Error al enviar el mensaje. Por favor intenta de nuevo.
@@ -257,9 +257,6 @@ ${form.message || 'Sin mensaje adicional'}
 Enviado desde: ${window.location.href}
 Fecha: ${new Date().toLocaleString('es-MX')}
     `.trim()
-
-    // Create mailto link for backup
-    const mailtoLink = `mailto:arcsinista@gmail.com?subject=Solicitud de Cotización - ${form.name}&body=${encodeURIComponent(emailContent)}`
 
     // Try to send via EmailJS if configured, otherwise use mailto
     if (typeof emailjs !== 'undefined') {

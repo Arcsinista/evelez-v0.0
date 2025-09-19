@@ -4,7 +4,7 @@
     <HeroSection />
     <BrandsSection />
     <SectorsSection />
-    <CatalogSection />
+    <!-- <CatalogSection /> -->
     <AboutSection />
     <ContactSection />
     <FooterSection />

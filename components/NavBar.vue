@@ -61,7 +61,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import logo from '~/assets/logo.jpg'
+import logo from '~/assets/logo.png'
 
 const isOpen = ref(false)
 </script>
